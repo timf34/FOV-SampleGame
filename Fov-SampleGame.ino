@@ -122,8 +122,12 @@ void loopMovement()
 
     speedCalc(prevX, prevY, 90, 50);
     moveStepsToPos(90, 50);
+    vibeMode = 0;
+    coreSetup();
     speedCalc(90, 50, 48, 26);
     moveStepsToPos(48, 26);
+    vibeMode = 0;
+    coreSetup();
 
     prevX = 48;
     prevY = 26;
@@ -142,8 +146,12 @@ void loopMovement()
 
     speedCalc(prevX, prevY, 0, 50);
     moveStepsToPos(0, 50);
+    vibeMode = 0;
+    coreSetup();
     speedCalc(0, 50, 48, 26);
     moveStepsToPos(48, 26);
+    vibeMode = 0;
+    coreSetup();
 }
 
 void speedCalc(float x1, float y1, float x2, float y2)
